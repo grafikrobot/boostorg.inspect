@@ -102,7 +102,7 @@ jobs:
           set BOOST_BRANCH=develop
           if "%GITHUB_REF_NAME%" == "master" set BOOST_BRANCH=master
           if "%GITHUB_REF_NAME%" == "modular" set BOOST_BRANCH=modular
-          set BOOST_GIT=https://github.com/%GITHUB_REPOSITORY:auto_index=boost%.git
+          set BOOST_GIT=https://github.com/%GITHUB_REPOSITORY:inspect=boost%.git
           echo BOOST_GIT: %BOOST_GIT%
           echo BOOST_BRANCH: %BOOST_BRANCH%
           cd ..
