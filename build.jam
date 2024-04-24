@@ -21,7 +21,9 @@ explicit
         : build//inspect/<link>static
         : <install-type>EXE <location>$(DIST_DIR)/bin
         : release ]
-    [ alias dist : dist-bin ]
     [ alias inspect : build//inspect ]
-    [ alias all : inspect dist ]
+    [ alias all : inspect dist-bin ]
     ;
+
+# Install distribution files/execs by default.
+alias dist : dist-bin ;
